@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --corner-color: #1D1E4C;
+    --body-color: #E5E5FD;
+}
+
+body {
+    border: 1em solid var(--corner-color);
+    background-color: var(--body-color);
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    max-width: 1024px;
+    width: 75vw;
+    margin: 100px auto;
+    margin-bottom: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 10px;
+}
+
+.image-container img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 150px;
+    object-fit: cover;
+}
+
+.name {
+    font-weight: 500;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.name h2 {
+    font-size: 4em;
+    font-weight: 500;
+    text-align: right;
+}
+
+.name h3 {
+    font-size: 27px;
+}
+
+.introduction {
+    margin-bottom: 3em;
+}
+
+.introduction h1 {
+    font-size: 5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+.bio h4 {
+    font-size: 20px;
+}
+
+.bio ul {
+    padding: 1.5em;
+}
+
+.bio ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    max-width: 1024px;
+    width: 75vw;
+    margin: 0 auto;
+    text-align: end;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name {
+        align-self: center;
+        align-items: center;
+    }
+
+    .name h2 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .introduction h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
